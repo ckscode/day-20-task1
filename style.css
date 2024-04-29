@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body{
+    background-color: rgb(250, 247, 243);
+}
+.app {
+  padding: 2%;
+ 
+}
+#input {
+  border-radius: 15px 0 0 15px;
+}
+.form-control:focus { /* Border color when input is selected */
+    box-shadow: 0 0 0 0.2rem rgba(21, 115, 71, 0.5) !important; /* Box shadow when input is selected */
+}
+#input::placeholder {
+  color: #157347;
+  opacity: 0.7;
+}
+#btn {
+  border-radius: 0 15px 15px 0;
+}
+
+#output {
+  columns: 4;
+}
+.heading{
+    font-size:80px !important;
+}
+.pictures {
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.selected::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0.5) 90%,
+    rgba(0, 0, 0, 0.6) 95%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+
+.pictures img {
+  object-fit: contain;
+}
+.typetext {
+     color:#157347;
+}
+.black {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  font-family: "Open Sans", sans-serif;
+}
+
+.user {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-right: 1%;
+}
+
+i {
+  margin-right: 5px;
+}
+.views,
+.preview {
+  color: white;
+  background-color: rgb(54, 54, 54);
+  padding: 0.5% 2%;
+  border-radius: 10px;
+  position: absolute;
+  font-size: 0.8rem;
+  cursor: default;
+}
+.views {
+  top: 2%;
+  right: 2%;
+}
+.preview {
+  left: 2%;
+  top: 2%;
+  cursor: pointer;
+}
+.preview a {
+  text-decoration: none !important;
+  color: white;
+}
+
+.user-content {
+  margin-bottom: 3%;
+  width: 100%;
+  font-size: 1em;
+}
+.username {
+  font-size: 1.1em;
+}
+.likes {
+  font-size: 0.8em;
+}
+
+@media screen and (min-width:1100px){
+    #output {
+        columns: 3;
+      }
+    #input {
+         width:30% !important;
+      }
+}
+@media screen and (max-width:1100px){
+    #output {
+        columns: 2;
+      }
+      #input {
+        width:100% !important;
+     }
+}
+@media screen and (max-width:778px){
+    #output {
+        columns: 2;
+      }
+      #input {
+        width:100% !important;
+     }
+}
+
+@media screen and (max-width:556px){
+    #output {
+        columns: 1;
+      }
+}
+
+@media screen and (max-width:450px){
+    #output {
+        columns: 1;
+      }
+      .heading{
+        font-size:50px !important;
+    }
+}
