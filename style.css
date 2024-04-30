@@ -7,21 +7,21 @@ body{
   padding: 2%;
  
 }
-#input {
-  border-radius: 15px 0 0 15px;
+.input {
+  border-radius: 15px 0 0 15px !important;
 }
 .form-control:focus { /* Border color when input is selected */
     box-shadow: 0 0 0 0.2rem rgba(21, 115, 71, 0.5) !important; /* Box shadow when input is selected */
 }
-#input::placeholder {
+.input::placeholder {
   color: #157347;
   opacity: 0.7;
 }
-#btn {
-  border-radius: 0 15px 15px 0;
+.btn {
+  border-radius: 0 15px 15px 0 !important;
 }
 
-#output {
+.output {
   columns: 4;
 }
 .heading{
@@ -114,38 +114,38 @@ i {
 }
 
 @media screen and (min-width:1100px){
-    #output {
+    .output {
         columns: 3;
       }
-    #input {
+    .input {
          width:30% !important;
       }
 }
 @media screen and (max-width:1100px){
-    #output {
+    .output {
         columns: 2;
       }
-      #input {
+      .input {
         width:100% !important;
      }
 }
 @media screen and (max-width:778px){
-    #output {
+    .output {
         columns: 2;
       }
-      #input {
+      .input {
         width:100% !important;
      }
 }
 
 @media screen and (max-width:556px){
-    #output {
+    .output {
         columns: 1;
       }
 }
 
 @media screen and (max-width:450px){
-    #output {
+    .output {
         columns: 1;
       }
       .heading{

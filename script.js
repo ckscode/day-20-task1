@@ -1,8 +1,8 @@
 //selecting elements
-const searchInput = document.getElementById("input");
-const searchButton = document.getElementById("btn");
-const Output = document.getElementById("output");
-const Typetext = document.getElementById("typetext");
+const searchInput = document.querySelector(".input");
+const searchButton = document.querySelector(".btn");
+const Output = document.querySelector(".output");
+const Typetext = document.querySelector(".typetext");
 
 searchInput.addEventListener("keypress",(e)=>{
   if(e.value !== ""){
@@ -19,9 +19,10 @@ const imagesDisplay = () => {
   fetch(Url)
     .then((response) => response.json())
     .then((e) => {
-      console.log(e);
       const data = e.hits;
       Output.innerHTML = "";
+
+      // if invalid input is given by the user
       if(data.length === 0){
        return Typetext.textContent="type a valid input"
       }
